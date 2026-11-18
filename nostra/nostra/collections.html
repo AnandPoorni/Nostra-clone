@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore every Nostra collection."><title>Nostra | Collections</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+<div class="announcement"><span>FREE TRACKED SHIPPING ON FASHION ITEMS</span><i>·</i><span>30-DAY GUARANTEE</span><span class="announcement-region">INDIA · INR ₹</span></div>
+<header class="site-header home-header">
+<button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+<nav class="main-nav home-main-nav">
+<a href="collections.html?category=New%20In">NEW IN</a><a href="collections.html?category=Fashion">FASHION</a><a href="collections.html?category=Tees">TEES</a><a href="collections.html?category=Shapewear">SHAPEWEAR</a><a href="collections.html?category=Beauty">BEAUTY</a><a href="collections.html?category=Wellness">WELLNESS</a>
+</nav>
+<a class="logo home-logo" href="index.html">NOSTRA</a>
+<div class="home-right"><nav class="home-utility-nav"><a href="collections.html?category=Kitchen">KITCHEN</a><a href="index.html">HOME</a><a href="collections.html?category=Tech">TECH</a></nav><div class="header-actions"><button class="icon-button search-toggle" aria-label="Search">⌕</button><a class="icon-button bag-link" href="#cart">♧ <span class="cart-count">0</span></a></div></div>
+</header>
+<div class="search-panel"><input type="search" id="siteSearch" placeholder="Search pieces, styles..." aria-label="Search products"><button class="search-submit">Search</button></div>
+<main>
+<section class="category-hero" id="categoryHero">
+  <img id="categoryHeroImage" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=2000&q=85" alt="Nostra curated collection">
+  <div class="category-hero-shade"></div>
+  <div class="category-hero-copy">
+    <p class="eyebrow light" id="categoryEyebrow">THE NOSTRA EDIT · 2026</p>
+    <h1 id="collectionTitle">New in</h1>
+    <p id="collectionDescription">Fresh arrivals across fashion, beauty, home and everyday essentials.</p>
+    <a class="button button-light" href="#shopProducts">EXPLORE THE EDIT <span>↘</span></a>
+  </div>
+  <span class="category-hero-note" id="categoryHeroNote">CONSIDERED PIECES · N° 01</span>
+</section>
+<section class="category-story section-wrap">
+  <div class="category-story-heading"><p class="eyebrow">CURATED FOR YOUR EVERYDAY</p><h2 id="categoryStoryTitle">A thoughtful edit of pieces to love.</h2></div>
+  <p id="categoryStoryText">Discover the latest Nostra selection, chosen for versatility, quality and effortless style.</p>
+</section>
+<section class="subcategory-section section-wrap">
+  <div class="section-heading"><div><p class="eyebrow">EXPLORE THE DETAILS</p><h2>Shop by edit</h2></div><span class="text-link">CURATED CATEGORIES ↗</span></div>
+  <div class="subcategory-grid" id="subcategoryCards"></div>
+</section>
+<section class="category-promo section-wrap">
+  <div class="category-promo-image"><img id="categoryPromoImage" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=85" alt="Nostra editorial selection"></div>
+  <div class="category-promo-copy"><p class="eyebrow">THE NOSTRA STANDARD</p><h2 id="categoryPromoTitle">Made to be worn.<br><em>Loved for longer.</em></h2><p id="categoryPromoText">Thoughtful details, considered materials and versatile pieces that work beautifully in your everyday life.</p><a href="#shopProducts" class="text-link">DISCOVER THE COLLECTION ↗</a></div>
+</section>
+<nav class="collection-categories" aria-label="Shop categories">
+<a data-category-link="New In" href="collections.html?category=New%20In">NEW IN</a><a data-category-link="Fashion" href="collections.html?category=Fashion">FASHION</a><a data-category-link="Tees" href="collections.html?category=Tees">TEES</a><a data-category-link="Shapewear" href="collections.html?category=Shapewear">SHAPEWEAR</a><a data-category-link="Beauty" href="collections.html?category=Beauty">BEAUTY</a><a data-category-link="Wellness" href="collections.html?category=Wellness">WELLNESS</a><a data-category-link="Kitchen" href="collections.html?category=Kitchen">KITCHEN</a><a data-category-link="Home" href="collections.html?category=Home">HOME</a><a data-category-link="Tech" href="collections.html?category=Tech">TECH</a>
+</nav>
+<section class="collection-layout section-wrap" id="shopProducts">
+<aside class="filters"><p class="eyebrow">REFINE YOUR EDIT</p>
+<label for="categoryFilter">CATEGORY</label><select id="categoryFilter"><option value="All">All categories</option><option>Fashion</option><option>Tees</option><option>Shapewear</option><option>Beauty</option><option>Wellness</option><option>Kitchen</option><option>Home</option><option>Tech</option></select>
+<label for="subcategoryFilter">STYLE</label><select id="subcategoryFilter"><option value="All">All styles</option></select>
+<p class="filter-note">Find pieces that fit your everyday. Explore considered essentials, new favourites and thoughtful details.</p></aside>
+<div class="collection-main"><div class="collection-toolbar"><span id="productCount">PRODUCTS</span><div class="toolbar-right"><span>SORT BY</span><select id="sortFilter"><option value="featured">Featured</option><option value="low">Price: Low to high</option><option value="high">Price: High to low</option><option value="name">Name: A to Z</option></select></div></div><div class="product-grid collection-products" data-all-products></div></div>
+</section>
+<section class="category-benefits">
+  <div><span>01</span><b>THOUGHTFUL SELECTION</b><small>Considered pieces for everyday life</small></div>
+  <div><span>02</span><b>STYLE THAT LASTS</b><small>Versatile designs beyond the trend</small></div>
+  <div><span>03</span><b>MADE SIMPLE</b><small>Easy browsing and clear details</small></div>
+</section>
+<section class="category-faq section-wrap">
+  <p class="eyebrow">A FEW GOOD THINGS TO KNOW</p><h2>Shopping the Nostra edit</h2>
+  <div class="category-faq-grid">
+    <details><summary>How do I find my preferred style?</summary><p>Use the Shop by Edit tiles or the style filter to narrow the collection to the pieces you want to explore.</p></details>
+    <details><summary>Can I save products for later?</summary><p>Select the heart on a product card to add it to your wishlist. Your saved items stay in this browser for this demo.</p></details>
+    <details><summary>How do I see product information?</summary><p>Open any product to view its description, available options, material information and care notes.</p></details>
+  </div>
+</section>
+<section class="utility-panels section-wrap">
+<div class="utility-panel" id="cart"><p class="eyebrow">YOUR SELECTION</p><h2>Shopping bag</h2><div id="cartItems" class="mini-list">Your bag is currently empty.</div><div class="cart-total"><b>SUBTOTAL</b><strong id="cartTotal">₹0</strong></div><button class="button button-dark" id="checkoutButton">CONTINUE TO CHECKOUT ↗</button></div>
+<div class="utility-panel" id="wishlist"><p class="eyebrow">SAVED FOR LATER</p><h2>Your wishlist</h2><div id="wishlistItems" class="mini-list">Your saved pieces will appear here.</div></div>
+</section>
+</main>
+<footer class="site-footer"><div class="footer-top"><div><a class="logo footer-logo" href="index.html">nostra<span>.</span></a><p>Considered fashion for everyday living.</p></div><div class="footer-links"><div><b>EXPLORE</b><a href="collections.html">Collections</a><a href="index.html">Home</a></div><div><b>FOLLOW ALONG</b><a href="#">Instagram ↗</a><a href="#">Pinterest ↗</a></div></div></div><div class="footer-bottom"><span>© 2026 NOSTRA STUDIO. ALL RIGHTS RESERVED.</span><span>MADE WITH INTENTION.</span></div></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+</body></html>
